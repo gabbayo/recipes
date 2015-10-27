@@ -130,7 +130,7 @@ int main(int argc, char** argv)
 
     XMapWindow(context.MainDisplay, context.MainWindow);
 
-    int centerWindow = 1;
+    int centerWindow = 0;
     if (centerWindow) {
         Screen* pScreen = XScreenOfDisplay(context.MainDisplay, screenIndex);
         int left = XWidthOfScreen(pScreen)/2 - PezGetConfig().Width/2;
