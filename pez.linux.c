@@ -146,8 +146,8 @@ int main(int argc, char** argv)
                      "Try changing PEZ_FORWARD_COMPATIBLE_GL to 0.\n");
         }
         int attribs[] = {
-            GLX_CONTEXT_MAJOR_VERSION_ARB, 4,
-            GLX_CONTEXT_MINOR_VERSION_ARB, 0,
+            GLX_CONTEXT_MAJOR_VERSION_ARB, 3,
+            GLX_CONTEXT_MINOR_VERSION_ARB, 3,
             GLX_CONTEXT_FLAGS_ARB, GLX_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB,
             GLX_CONTEXT_PROFILE_MASK_ARB, GLX_CONTEXT_CORE_PROFILE_BIT_ARB,
             0
@@ -191,7 +191,7 @@ int main(int argc, char** argv)
     strcpy(qualifiedPath, pezResourcePath());
     strcat(qualifiedPath, "/");
     pezSwAddPath(qualifiedPath, ".glsl");
-    pezSwAddDirective("*", "#version 420");
+    pezSwAddDirective("*", "#version 150");
 
     // Perform user-specified intialization
     pezPrintString("OpenGL Version: %s\n", glGetString(GL_VERSION));
