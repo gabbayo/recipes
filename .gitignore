@@ -1,0 +1,11 @@
+*.o
+ClipPlanes
+DeepOpacity
+DistancePicking
+GenCubeMap
+Lava
+Raycast
+SimpleText
+TextGrid
+ToonShading
+VoronoiPicking
