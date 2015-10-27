@@ -9,3 +9,7 @@ SimpleText
 TextGrid
 ToonShading
 VoronoiPicking
+.cproject
+.project
+.ptp-sync/
+.settings/
