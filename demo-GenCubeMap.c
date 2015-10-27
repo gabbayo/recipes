@@ -8,6 +8,9 @@
 #include "pez.h"
 #include "vmath.h"
 
+#define png_infopp_NULL (png_infopp)NULL
+#define int_p_NULL (int*)NULL
+
 typedef struct {
     GLuint ColorTexture;
     GLuint DepthBuffer;
