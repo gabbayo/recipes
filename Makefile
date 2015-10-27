@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-std=c99 -Wall -c -Wc++-compat -O3
+CFLAGS=-std=c99 -Wall -c -Wc++-compat -O3 -g
 LIBS=-lX11 -lGL -lpng -lm
 DEMOS=\
 	GenCubeMap \
